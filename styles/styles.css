@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #cecece;
+}
+
+.formHeader h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+.form {
+  background-color: #fcfcfc;
+  position: absolute;
+  width: 300px;
+  border: 2px solid #219ace;
+  border-radius: 5px;
+  top: 20%;
+  left: 50%;
+  margin-left: -150px;
+  padding: 0px 20px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+select {
+  width: 100%;
+  padding: 5px;
+  padding-left: 25px;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  outline: none;
+  transition: 0.3s;
+}
+
+select {
+  padding-left: 10px;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+select:focus {
+  border-color: #219ace;
+  box-shadow: 0px 0px 8px 0px #219ace;
+}
+
+input[type='checkbox'] + label {
+  display: inline-block;
+}
+
+button {
+  float: right;
+  margin-bottom: 5px;
+  width: 70px;
+  border: 1px solid #219ace;
+  border-radius: 3px;
+}
+
+.field-wrapper {
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.field-wrapper i {
+  position: absolute;
+  top: 0px;
+  padding: 6px 8px;
+  transition: 0.3s;
+}
+
+input[type='text']:focus + i,
+input[type='email']:focus + i,
+input[type='password']:focus + i {
+  color: #219ace;
+}
+
+.field-wrapper span {
+  font-size: 10px;
+  font-weight: bolder;
+  color: #0909fa;
+}

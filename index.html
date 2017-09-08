@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registation</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <section id="wrapper">
+        <section class="form">
+            <form method="post" action="http://codeit.pro/frontTestTask/user/registration">
+                <div class="formHeader">
+                    <h3>Sign Up</h3>
+                </div>
+                <div class="field-wrapper">
+                    <input type="text" name="name" placeholder="Username" required>
+                    <i class="fa fa-user fa-md fa-fw"></i>
+                </div>
+                <div class="field-wrapper">
+                    <input type="text" name="secondname" placeholder="Username" required>
+                    <i class="fa fa-user fa-md fa-fw"></i>
+                </div>
+                <div class="field-wrapper">
+                    <input type="email" name="email" placeholder="Email" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"
+                        title="Kindly enter a valid email address here.">
+                    <i class="fa fa-user fa-md fa-fw"></i>
+                </div>
+                <div class="field-wrapper">
+                    <select name="gender" id="select">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select></div>
+                <div class="field-wrapper">
+                    <input type="password" placeholder="Password" name="pass" required>
+                    <i class="fa fa-user fa-md fa-fw"></i>
+                </div>
+                <div class="field-wrapper">
+                    <input type="checkbox" name="checkbox" id="checkbox" required>
+                    <label for="checkbox"><span>I agree with Conditions of Agreement</span></label>
+                </div>
+                <div class="field-wrapper">
+                    <button type="submit" name="submit">Send</button>
+                </div>
+            </form>
+        </section>
+    </section>
+</body>
+
+</html>
